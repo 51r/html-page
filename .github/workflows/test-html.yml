@@ -1,6 +1,5 @@
 name: Test html
-on:
-push:
+on: push
 jobs:
   test-html:
     runs-on: ubuntu-latest
