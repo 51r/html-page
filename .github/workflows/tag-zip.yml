@@ -7,10 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Archive Release
-      uses: thedoctor0/zip-release@master
-      with:
-        type: 'zip'
-        filename: 'release.zip'
-        exclusions: '*.git* *.zip'
+      - uses: actions/checkout@master
+      - name: Generate ZIP
+        uses: byteever/action-build-zip@master
+        with:
+          filename: 'release.zip'
