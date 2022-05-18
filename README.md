@@ -1,1 +1,1 @@
-# html-page
+# This repo contains simple HTML page
